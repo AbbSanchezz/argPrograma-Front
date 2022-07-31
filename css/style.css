@@ -1,0 +1,86 @@
+:root {
+    --font: 'Neue Montreal', sans-serif;
+    /*acá documenté los fuentes y los colores*/
+    --negro: #0B0C0E;
+    --gris-oscuro: #3C3D3E;
+    --gris-claro: #C7D0D9;
+    --blanco: #F4F7FA;
+}
+
+* {
+    font-family: var(--font);
+}
+
+body {
+    background: var(--blanco);
+    margin: 0;
+}
+
+.wrapper {
+    inline-size: 1136px;
+    /*sirve para que el contenido no sobrepase los 1136px y quede como una especie de margen*/
+    margin: auto;
+}
+
+main {
+    background-image: url("../images/imagen-developer.png");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+}
+
+.nombre-header {
+    display: inline;
+    margin-inline-start: 60px;
+}
+
+.nombre-header h2 {
+    margin: 0;
+    display: inline;
+    color: var(--blanco);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+nav {
+    display: inline;
+    margin-inline-end: 60px;
+}
+
+nav ul {
+    display: inline;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: -4px;
+}
+
+nav a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h1 {
+	color: var(--blanco);
+	font-style: normal;
+font-weight: 500;
+font-size: 150.378px;
+line-height: 180px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
