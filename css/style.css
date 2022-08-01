@@ -1,5 +1,6 @@
 :root {
-    --font: 'Neue Montreal', sans-serif;
+    --font:
+        'Neue Montreal', sans-serif;
     /*acá documenté los fuentes y los colores*/
     --negro: #0B0C0E;
     --gris-oscuro: #3C3D3E;
@@ -17,14 +18,13 @@ body {
 }
 
 .wrapper {
-    inline-size: 1136px;
-    /*sirve para que el contenido no sobrepase los 1136px y quede como una especie de margen*/
+    inline-size: 1024px;
     margin: auto;
 }
 
 main {
     background-image: url("../images/imagen-developer.png");
-    height: 700px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -34,23 +34,43 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 700px;
+    align-items: flex-start;
+    height: 250px;
 }
 
-.nombre-header {
-    display: inline;
-    margin-inline-start: 60px;
-}
 
-.nombre-header h2 {
-    margin: 0;
-    display: inline;
+.titulo-programadora h1 {
     color: var(--blanco);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 95px;
+    line-height: 120px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    text-align: center;
+}
+
+.titulo-header h2 {
+    color: var(--blanco);
+    margin-block-start: 25px;
+    margin-inline-start: 60px;
+    margin-block-end: 0em;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
+}
+
+.div-nav {
+    margin-block-start: 25px;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 nav {
@@ -65,22 +85,193 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: -4px;
+    margin: 15px;
 }
 
-nav a {
+/* FIN HEADER */
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-block-end: 70px;
+}
+
+.proyecto {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-block-end: 10px;
+}
+
+.proyecto img {
+    margin-block-start: 15px;
+}
+
+#sobre-mi {
+    margin-block-start: 100px;
+}
+
+.titulo h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.descripcion-sobre-mi p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 140%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.grid h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 73px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.descripcion p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 140%;
+    margin-block-start: 0em;
+    margin-block-end: 20px;
+}
+
+.cliente {
+    display: grid;
+    grid-template-columns: 12% 88%;
+    margin-block-end: 40px;
+    align-content: center;
+}
+
+.datos-cliente h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    margin-block-start: 5px;
+    margin-block-end: 0em;
+}
+
+.datos-cliente p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: 50px;
+    margin-block-end: 50px;
+}
+
+.datos hr {
+    width: 100%;
+    float: left;
+    width: 600px;
+    margin-block-end: 30px;
+}
+
+.datos input,
+.datos textarea {
+    margin-block-start: 10px;
+    width: 600px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    border-style: none;
+    background-color: var(--blanco);
+}
+
+.datos textarea {
+    width: 600px;
+    margin-block-end: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+.datos button {
+    width: 600px;
+}
+
+form h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+label {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
+    line-height: 160%;
+}
+
+button {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 1px solid #0B0C0E;
+    border-radius: 170px;
+    padding: 24px 48px;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 22px;
+    margin-block-end: 60px;
 }
 
-h1 {
-	color: var(--blanco);
-	font-style: normal;
-font-weight: 500;
-font-size: 150.378px;
-line-height: 180px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+footer {
+    background-color: var(--negro);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
+footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--blanco);
+    margin-inline-start: 60px;
+    margin-block-start: 0em;
+    margin-block-end: 25px;
+}
+
+footer a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-inline-end: 60px;
+    margin-block-start: 0em;
+}
+
+.social {
+    margin-block-end: 25px;
+}

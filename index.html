@@ -15,30 +15,38 @@
 
     <main>
 
-        <header class="header-container">
+        <header>
 
-            <div class="nombre-header">
-                <h2>Denise Sanchez</h2>
+            <div class="header-container">
+
+                <div class="titulo-header">
+                    <h2>Denise Sanchez</h2>
+                </div>
+
+                <div class="div-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#sobre-mi">Sobre mí</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
             </div>
-
-            <nav class="nav">
-                <ul>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-
         </header>
 
-        <h1>Programadora Junior</h1>
+        <div class="titulo-programadora">
+            <h1>Programadora Junior</h1>
+        </div>
+
 
     </main>
 
     <div class="wrapper">
-        <section id="sobre-mi">
+        <section id="sobre-mi" class="grid">
 
-            <div class="titulo-sobre-mi">
+            <div class="titulo">
                 <h3>Sobre mí</h3>
             </div>
 
@@ -52,73 +60,111 @@
 
         </section>
 
-        <section id="proyectos">
+        <section id="proyectos" class="grid">
 
-            <div class="titulo-proyectos">
+            <div class="titulo">
                 <h3>Proyectos</h3>
             </div>
 
             <div class="subtitulo-proyectos">
 
-                <section class="proyecto-1">
-                    <h4>Decodable.co</h4>
-                    <p>Brand Design - Webflow Development - Web Design</p>
-                    <img src="images/flecha.svg" alt="flecha">
+                <section class="proyecto">
+                    <div class="texto-proyecto">
+                        <h4>Decodable.co</h4>
+                        <p>Brand Design - Webflow Development - Web Design</p>
+                    </div>
+                    <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
                 </section>
 
-                <section class="proyecto-2">
-                    <h4>Gofirefly.io</h4>
-                    <p>Brand Design - Webflow Development - Web Design</p>
-                    <img src="images/flecha.svg" alt="flecha">
+                <hr>
+
+                <section class="proyecto">
+                    <div class="texto-proyecto">
+                        <h4>Decodable.co</h4>
+                        <p>Brand Design - Webflow Development - Web Design</p>
+                    </div>
+                    <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
                 </section>
 
-                <section class="proyecto-3">
-                    <h4>Blinkops.com</h4>
-                    <p>Brand Design - Webflow Development - Web Design</p>
-                    <img src="images/flecha.svg" alt="flecha">
+                <hr>
+
+                <section class="proyecto">
+                    <div class="texto-proyecto">
+                        <h4>Decodable.co</h4>
+                        <p>Brand Design - Webflow Development - Web Design</p>
+                    </div>
+                    <div class="img-proyecto">
+                        <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
+                    </div>
+
                 </section>
 
-                <section class="proyecto-4">
-                    <h4>Withkanvas.com</h4>
-                    <p>Brand Design - Webflow Development - Web Design</p>
-                    <img src="images/flecha.svg" alt="flecha">
+                <hr>
+
+                <section class="proyecto">
+                    <div class="texto-proyecto">
+                        <h4>Decodable.co</h4>
+                        <p>Brand Design - Webflow Development - Web Design</p>
+                    </div>
+                    <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
                 </section>
 
             </div>
 
         </section>
 
-        <section id="testimonios">
+        <section id="testimonios" class="grid">
 
-            <div class="titulo-testimonios">
+            <div class="titulo">
                 <h3>Testimonios</h3>
             </div>
 
-            <section class="testimonio-1">
+            <div class="div-testimonios">
+                <section class="testimonio">
 
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat.”
-                </p>
+                    <div class="descripcion">
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.”
+                        </p>
+                    </div>
+                    <div class="cliente">
+                        <div class="img-cliente">
+                            <img src="images/cliente1.png" alt="cliente-1">
+                        </div>
+                        <div class="datos-cliente">
+                            <h4 class="nombre-cliente">Ayush Raj</h4>
+                            <p>VP of Marketing @ Webflow</p>
+                        </div>
+                    </div>
 
-                <img src="images/cliente1.png" alt="cliente-1">
-                <h4 class="nombre-cliente-1">Ayush Raj</h4>
-                <p>VP of Marketing @ Webflow</p>
-            </section>
+                </section>
 
-            <section class="testimonio-2">
+                <section class="testimonio">
 
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat.”
-                </p>
+                    <div class="descripcion">
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.”
+                        </p>
+                    </div>
 
-                <img src="images/cliente2.png" alt="cliente-2">
-                <h4 class="nombre-cliente-2">Alex Cattoni</h4>
-                <p>VP of Marketing @ Webflow</p>
-            </section>
+                    <div class="cliente">
+                        <div class="img-cliente">
+                            <img src="images/cliente2.png" alt="cliente-1">
+                        </div>
+                        <div class="datos-cliente">
+                            <h4 class="nombre-cliente">Amanda Araj</h4>
+                            <p>VP of Marketing @ Webflow</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+
 
         </section>
 
@@ -126,25 +172,29 @@
 
             <h3 class="titulo-contacto">¡Construyamos juntos algo genial! 💜</h3>
 
-            <label for="form-nombre">Nombre
-                <input required id="form-nombre" type="text" name="nombre" placeholder="Justin Bieber">
-            </label>
-            <label for="form-email">Email
-                <input required id="form-email" type="email" name="email" placeholder="justin@gmail.com">
-            </label>
-            <label for="form-mensaje">Mensaje
-                <textarea id="form-mensaje" type="text" name="mensaje" placeholder="Escribe tu mensaje :)" cols="30"
-                    rows="7"></textarea>
-            </label>
-
-            <button class="button" type="submit">Enviar</button>
+            <div class="datos">
+                <label for="form-titulo">Nombre<br>
+                    <input required id="form-nombre" type="text" name="nombre" placeholder="Justin Bieber">
+                </label>
+                <hr>
+                <label for="form-titulo">Email<br>
+                    <input required id="form-email" type="email" name="email" placeholder="justin@gmail.com">
+                </label>
+                <hr>
+                <label for="form-titulo">Mensaje<br>
+                    <textarea id="form-mensaje" type="text" name="mensaje" placeholder="Escribe tu mensaje :)" rows="4"></textarea>
+                </label>
+    
+                <button class="button" type="submit" >Enviar</button>
+            </div>
+           
 
         </form>
 
     </div>
 
 
-    <footer class="footer">
+    <footer>
 
         <div class="footer-p">
             <p>Portfolio para Argentina Programa</p>
