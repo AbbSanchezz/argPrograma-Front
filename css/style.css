@@ -1,7 +1,5 @@
 :root {
-    --font:
-        'Neue Montreal', sans-serif;
-    /*acá documenté los fuentes y los colores*/
+    --font: 'Neue Montreal', sans-serif;
     --negro: #0B0C0E;
     --gris-oscuro: #3C3D3E;
     --gris-claro: #C7D0D9;
@@ -18,7 +16,7 @@ body {
 }
 
 .wrapper {
-    inline-size: 1024px;
+    inline-size: 760px; /*ipad*/
     margin: auto;
 }
 
@@ -35,7 +33,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    height: 250px;
+    height: 220px;
 }
 
 
@@ -43,22 +41,26 @@ main {
     color: var(--blanco);
     font-style: normal;
     font-weight: 500;
-    font-size: 95px;
-    line-height: 120px;
+    font-size: 80px;
+    margin-block-start: 0px;
+    margin-block-end: 20px;
+    text-align: center;
+}
+
+.titulo-programadora h2 {
+    color: var(--blanco);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
     margin-block-start: 0px;
     margin-block-end: 0px;
     text-align: center;
 }
 
-.titulo-header h2 {
-    color: var(--blanco);
+.titulo-header img {
     margin-block-start: 25px;
     margin-inline-start: 60px;
     margin-block-end: 0em;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 160%;
 }
 
 .div-nav {
@@ -94,6 +96,23 @@ nav li {
     display: grid;
     grid-template-columns: 30% 70%;
     margin-block-end: 70px;
+}
+
+.div-skill {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-skill{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-skill img {
+    margin-block-end: 40px;
 }
 
 .proyecto {
@@ -228,7 +247,7 @@ label {
     line-height: 160%;
 }
 
-button {
+.button {
     background-color: var(--negro);
     color: var(--blanco);
     border: 1px solid #0B0C0E;
@@ -262,7 +281,7 @@ footer p {
     margin-block-end: 25px;
 }
 
-footer a{
+footer a {
     color: var(--blanco);
     text-decoration: none;
     font-weight: 400;
@@ -274,4 +293,40 @@ footer a{
 
 .social {
     margin-block-end: 25px;
+}
+
+.img-proyecto img:hover {
+    background: rgba(109, 0, 248, 0.08);
+    opacity: 0.8;
+    border-radius: 180px;
+}
+
+.login-boton {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: 1px solid --blanco;
+    border-radius: 170px;
+    padding: 10px 28px;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+@media screen and (min-width: 1023px){
+    .wrapper {
+        inline-size: 980px;
+        margin: auto;
+    }
+    /* tablet */
+}
+
+@media screen and (min-width: 1280px){
+    .wrapper {
+        inline-size: 1200px;
+        margin: auto;
+    }
+    /* laptop */
 }

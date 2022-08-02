@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Denise Sanchez</title>
@@ -7,20 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="192x192" href="images/{ }.svg">
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
 </head>
 
 <body>
 
-
-
     <main>
 
         <header>
-
             <div class="header-container">
 
                 <div class="titulo-header">
-                    <h2>Denise Sanchez</h2>
+                    <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+                        target="_blank"><img src="images/Logo.png" alt="Logo de argentina programa"></a>
                 </div>
 
                 <div class="div-nav">
@@ -29,6 +30,7 @@
                             <li><a href="#sobre-mi">Sobre mí</a></li>
                             <li><a href="#proyectos">Proyectos</a></li>
                             <li><a href="#contacto">Contacto</a></li>
+                            <li><a class="login-boton" href="#login">Login</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -38,8 +40,8 @@
 
         <div class="titulo-programadora">
             <h1>Programadora Junior</h1>
+            <h2>Denise Abril Sanchez</h2>
         </div>
-
 
     </main>
 
@@ -51,11 +53,9 @@
             </div>
 
             <div class="descripcion-sobre-mi">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <p> Soy una estudiante de programación, actualmente estoy en el primer año de la Tecnicatura
+                    Universitaria en Programación de la UTN, y en el curso de Argentina Programa
+                    para el cual realizo este portfolio como proyecto final. </p>
             </div>
 
         </section>
@@ -70,20 +70,13 @@
 
                 <section class="proyecto">
                     <div class="texto-proyecto">
-                        <h4>Decodable.co</h4>
-                        <p>Brand Design - Webflow Development - Web Design</p>
+                        <h4>Reserva Ecológica</h4>
+                        <p>Diseño web en Figma - Maquetado en HTML y CSS</p>
                     </div>
-                    <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
-                </section>
-
-                <hr>
-
-                <section class="proyecto">
-                    <div class="texto-proyecto">
-                        <h4>Decodable.co</h4>
-                        <p>Brand Design - Webflow Development - Web Design</p>
+                    <div class="img-proyecto">
+                        <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img
+                                src="images/flecha.svg" alt="flecha"></a>
                     </div>
-                    <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
                 </section>
 
                 <hr>
@@ -94,21 +87,10 @@
                         <p>Brand Design - Webflow Development - Web Design</p>
                     </div>
                     <div class="img-proyecto">
-                        <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
+                        <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img
+                                src="images/flecha.svg" alt="flecha"></a>
                     </div>
-
                 </section>
-
-                <hr>
-
-                <section class="proyecto">
-                    <div class="texto-proyecto">
-                        <h4>Decodable.co</h4>
-                        <p>Brand Design - Webflow Development - Web Design</p>
-                    </div>
-                    <a href="https://miprimersitioweb.org.ar/proyectos/2021/reserva/" target="_blank"><img src="images/flecha.svg" alt="flecha"></a>
-                </section>
-
             </div>
 
         </section>
@@ -163,8 +145,34 @@
 
                 </section>
             </div>
+        </section>
 
+        <section id="skills" class="grid">
 
+            <div class="titulo">
+                <h3>Skills</h3>
+            </div>
+
+            <div class="div-skill">
+                    <div class="img-skill">
+                        <img src="circulo.png" alt="">
+                    </div>
+                    <div class="img-skill">
+                        <img src="circulo.png" alt="ejemplo de skill">
+                    </div>
+                    <div class="img-skill">
+                        <img src="circulo.png" alt="ejemplo de skill">
+                    </div>
+                    <div class="img-skill">
+                        <img src="circulo.png" alt="ejemplo de skill">
+                    </div>
+                    <div class="img-skill">
+                        <img src="circulo.png" alt="ejemplo de skill">
+                    </div>
+                    <div class="img-skill">
+                        <img src="circulo.png" alt="ejemplo de skill">
+                    </div>
+            </div>
 
         </section>
 
@@ -182,17 +190,16 @@
                 </label>
                 <hr>
                 <label for="form-titulo">Mensaje<br>
-                    <textarea id="form-mensaje" type="text" name="mensaje" placeholder="Escribe tu mensaje :)" rows="4"></textarea>
+                    <textarea id="form-mensaje" type="text" name="mensaje" placeholder="Escribe tu mensaje :)"
+                        rows="4"></textarea>
                 </label>
-    
-                <button class="button" type="submit" >Enviar</button>
+
+                <button class="button" type="submit">Enviar</button>
             </div>
-           
+
 
         </form>
-
     </div>
-
 
     <footer>
 
@@ -207,6 +214,12 @@
         </div>
 
     </footer>
+
+    <!-- Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script> -->
 
 </body>
 
