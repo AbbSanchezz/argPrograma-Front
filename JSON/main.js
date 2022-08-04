@@ -5,3 +5,5 @@ const usuario = {
 };
 
 console.log(JSON.stringify(usuario));
+
+// node C:/Users/sanch/OneDrive/Documentos/argPrograma/Front/JSON/main 

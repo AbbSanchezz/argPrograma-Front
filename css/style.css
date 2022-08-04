@@ -16,7 +16,8 @@ body {
 }
 
 .wrapper {
-    inline-size: 760px; /*ipad*/
+    inline-size: 760px;
+    /*ipad*/
     margin: auto;
 }
 
@@ -105,7 +106,7 @@ nav li {
     align-items: center;
 }
 
-.img-skill{
+.img-skill {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -226,7 +227,8 @@ textarea {
     resize: none;
 }
 
-.datos button {
+.datos button,
+.datos a {
     width: 600px;
 }
 
@@ -315,18 +317,20 @@ footer a {
 }
 
 
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1023px) {
     .wrapper {
         inline-size: 980px;
         margin: auto;
     }
+
     /* tablet */
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
     .wrapper {
         inline-size: 1200px;
         margin: auto;
     }
+
     /* laptop */
 }
